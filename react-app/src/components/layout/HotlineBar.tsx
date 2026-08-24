@@ -3,17 +3,13 @@
 import { useEffect, useRef, useCallback } from 'react';
 
 const hotlines = [
-  { icon: 'bi-shield-fill', label: 'Police', number: '0927 400 8033', tel: '09274008033' },
-  { icon: 'bi-heart-fill', label: 'MSWDO', number: '0916 284 0885', tel: '09162840885' },
-  { icon: 'bi-fire', label: 'Fire', number: '0936 062 0305', tel: '09360620305' },
-  { icon: 'bi-building', label: 'DILG', number: '0906 188 086', tel: '0906188086' },
-  {
-    icon: 'bi-exclamation-triangle-fill',
-    label: 'MDRRMO',
-    number: '0926 383 3744',
-    tel: '09263833744',
-  },
-  { icon: 'bi-truck', label: 'R2TMC', number: '0906 819 5569', tel: '09068195569' },
+  // Official emergency hotlines published on https://albay.gov.ph/
+  { icon: 'bi-exclamation-triangle-fill', label: 'OCD/RDRRMC', number: '0917 574 7880', tel: '09175747880' },
+  { icon: 'bi-shield-fill', label: 'PNP Albay', number: '0998 598 5926', tel: '09985985926' },
+  { icon: 'bi-fire', label: 'BFP Albay', number: '0919 992 5484', tel: '09199925484' },
+  { icon: 'bi-heart-pulse-fill', label: 'Albay EMS', number: '0918 911 9911', tel: '09189119911' },
+  { icon: 'bi-hospital', label: 'BRTTH HEMS', number: '(052) 732 5555', tel: '0527325555' },
+  { icon: 'bi-cloud-drizzle-fill', label: 'PAGASA Albay', number: '(052) 481 4472', tel: '0524814472' },
 ];
 
 export default function HotlineBar() {

@@ -19,5 +19,6 @@
     "congressional_districts": 3,
     "capital": "Legazpi City"
   },
-  "barangays": []
+  "barangays": [],
+  "_note": "PSA 2020 Census figures used. albay.gov.ph/about cites the earlier 2015 census (1,312,309 population; 277,127 households)."
 }

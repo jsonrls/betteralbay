@@ -305,11 +305,11 @@ export default function HomePage() {
                   <p>{t('history-1569')}</p>
                 </div>
               </div>
-              <div className="timeline-item" data-year="1814">
+              <div className="timeline-item" data-year="1574">
                 <div className="timeline-marker"></div>
                 <div className="timeline-content">
                   <span className="timeline-year">1814</span>
-                  <p>{t('history-1814')}</p>
+                  <p>{t('history-1574')}</p>
                 </div>
               </div>
               <div className="timeline-item" data-year="1834">
@@ -326,25 +326,25 @@ export default function HomePage() {
                   <p>{t('history-1898')}</p>
                 </div>
               </div>
-              <div className="timeline-item" data-year="1945">
+              <div className="timeline-item" data-year="1901">
                 <div className="timeline-marker"></div>
                 <div className="timeline-content">
                   <span className="timeline-year">1945</span>
-                  <p>{t('history-1945')}</p>
+                  <p>{t('history-1901')}</p>
                 </div>
               </div>
-              <div className="timeline-item" data-year="2006">
+              <div className="timeline-item" data-year="1941">
                 <div className="timeline-marker"></div>
                 <div className="timeline-content">
                   <span className="timeline-year">2006</span>
-                  <p>{t('history-2006')}</p>
+                  <p>{t('history-1941')}</p>
                 </div>
               </div>
-              <div className="timeline-item" data-year="2020">
+              <div className="timeline-item" data-year="1946">
                 <div className="timeline-marker"></div>
                 <div className="timeline-content">
                   <span className="timeline-year">2020</span>
-                  <p>{t('history-2020')}</p>
+                  <p>{t('history-1946')}</p>
                 </div>
               </div>
             </div>
