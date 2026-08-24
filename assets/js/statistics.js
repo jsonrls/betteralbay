@@ -42,30 +42,26 @@ function getChartColors(count) {
   return colors;
 }
 
-// Barangay population data (2024 Census) - Source: PSA, July 1, 2024
+// LGU population data (2020 Census) - Source: PSA Philippine Statistics Authority
 const barangayData = [
-  { name: 'Roxas', population: 9088, classification: 'Urban' },
-  { name: 'Quirino', population: 6572, classification: 'Urban' },
-  { name: 'Osmeña', population: 6403, classification: 'Urban' },
-  { name: 'Quezon', population: 5758, classification: 'Urban' },
-  { name: 'Curifang', population: 4885, classification: 'Rural' },
-  { name: 'Bagahabag', population: 4731, classification: 'Rural' },
-  { name: 'Uddiawan', population: 4217, classification: 'Rural' },
-  { name: 'Bascaran', population: 3845, classification: 'Rural' },
-  { name: 'Aggub', population: 3101, classification: 'Rural' },
-  { name: 'San Luis', population: 2668, classification: 'Rural' },
-  { name: 'Communal', population: 2586, classification: 'Rural' },
-  { name: 'Lactawan', population: 2109, classification: 'Rural' },
-  { name: 'Concepcion', population: 1954, classification: 'Rural' },
-  { name: 'San Juan', population: 1965, classification: 'Rural' },
-  { name: 'Wacal', population: 1398, classification: 'Rural' },
-  { name: 'Dadap', population: 1409, classification: 'Rural' },
-  { name: 'Tucal', population: 1244, classification: 'Rural' },
-  { name: 'Bangaan', population: 1284, classification: 'Rural' },
-  { name: 'Bangar', population: 1146, classification: 'Rural' },
-  { name: 'Pilar D. Galima', population: 1146, classification: 'Rural' },
-  { name: 'Poblacion North', population: 970, classification: 'Urban' },
-  { name: 'Poblacion South', population: 817, classification: 'Urban' },
+  { name: 'Legazpi City', population: 209533, classification: 'Component City' },
+  { name: 'Tabaco City', population: 140961, classification: 'Component City' },
+  { name: 'Daraga', population: 133893, classification: 'Municipality' },
+  { name: 'Ligao City', population: 118096, classification: 'Component City' },
+  { name: 'Polangui', population: 89176, classification: 'Municipality' },
+  { name: 'Guinobatan', population: 85786, classification: 'Municipality' },
+  { name: 'Libon', population: 75073, classification: 'Municipality' },
+  { name: 'Bacacay', population: 72485, classification: 'Municipality' },
+  { name: 'Camalig', population: 72042, classification: 'Municipality' },
+  { name: 'Oas', population: 66084, classification: 'Municipality' },
+  { name: 'Tiwi', population: 56444, classification: 'Municipality' },
+  { name: 'Pio Duran', population: 49070, classification: 'Municipality' },
+  { name: 'Malinao', population: 47359, classification: 'Municipality' },
+  { name: 'Malilipot', population: 40857, classification: 'Municipality' },
+  { name: 'Santo Domingo', population: 37765, classification: 'Municipality' },
+  { name: 'Rapu-Rapu', population: 36151, classification: 'Municipality' },
+  { name: 'Manito', population: 26162, classification: 'Municipality' },
+  { name: 'Jovellar', population: 17795, classification: 'Municipality' },
 ];
 
 // Historical population data (Census years)

@@ -82,7 +82,7 @@ const translations: Record<string, Record<string, string>> = {
     'contact-address': 'Address',
     'contact-hours': 'Mon-Fri: 8:00 AM - 5:00 PM',
     'contact-response': "We'll respond within 24 hours",
-    'contact-municipal-hall': 'Municipal Hall',
+    'contact-municipal-hall': 'Albay Provincial Capitol',
 
     // Services Page
     'services-title': 'Municipal Services Directory',
@@ -512,7 +512,7 @@ const translations: Record<string, Record<string, string>> = {
     'contact-address': 'Adres',
     'contact-hours': 'Lunes-Biyernes: 8:00 AM - 5:00 PM',
     'contact-response': 'Sasagutin namin sa loob ng 24 na oras',
-    'contact-municipal-hall': 'Munisipyo',
+    'contact-municipal-hall': 'Kapitolyo ng Lalawigan',
 
     // Services Page
     'services-title': 'Direktoryo ng Serbisyong Munisipal',

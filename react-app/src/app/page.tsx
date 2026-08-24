@@ -636,25 +636,25 @@ export default function HomePage() {
           <div className="home-leadership-grid">
             <div className="home-leader-card">
               <div className="home-leader-badge">{t('title-mayor')}</div>
-              <h3>Hon. Philip A. Dacayo</h3>
+              <h3>Hon. Noel E. Rosal</h3>
               <div className="home-leader-contacts">
-                <a href="mailto:mayor@albay.gov.ph">
-                  <i className="bi bi-envelope"></i> mayor@albay.gov.ph
+                <a href="mailto:pgasecretariat@gmail.com">
+                  <i className="bi bi-envelope"></i> pgasecretariat@gmail.com
                 </a>
-                <a href="tel:0783265002">
-                  <i className="bi bi-telephone"></i> (078) 326-5002
+                <a href="tel:0527426377">
+                  <i className="bi bi-telephone"></i> (052) 742-6377
                 </a>
               </div>
             </div>
             <div className="home-leader-card">
               <div className="home-leader-badge">{t('title-vice-mayor')}</div>
-              <h3>Hon. Eduardo D. Tiongson</h3>
+              <h3>Hon. Farida &apos;Diday&apos; Co</h3>
               <div className="home-leader-contacts">
-                <a href="mailto:vicemayor@albay.gov.ph">
-                  <i className="bi bi-envelope"></i> vicemayor@albay.gov.ph
+                <a href="mailto:pgasecretariat@gmail.com">
+                  <i className="bi bi-envelope"></i> pgasecretariat@gmail.com
                 </a>
-                <a href="tel:0783265003">
-                  <i className="bi bi-telephone"></i> (078) 326-5003
+                <a href="tel:09268284392">
+                  <i className="bi bi-telephone"></i> (0926) 828-4392
                 </a>
               </div>
             </div>
@@ -672,23 +672,23 @@ export default function HomePage() {
             </Link>
           </div>
           <div className="home-contact-v2-grid">
-            <a href="tel:0788053581" className="home-contact-v2-card">
+            <a href="tel:0527426377" className="home-contact-v2-card">
               <div className="home-contact-v2-icon">
                 <i className="bi bi-telephone-fill"></i>
               </div>
               <div className="home-contact-v2-content">
                 <h3>{t('contact-phone')}</h3>
-                <p className="home-contact-v2-value">(078) 805-3581</p>
+                <p className="home-contact-v2-value">(052) 742-6377</p>
                 <span className="home-contact-v2-note">{t('contact-hours')}</span>
               </div>
             </a>
-            <a href="mailto:lgualbaynv@gmail.com" className="home-contact-v2-card">
+            <a href="mailto:pgasecretariat@gmail.com" className="home-contact-v2-card">
               <div className="home-contact-v2-icon">
                 <i className="bi bi-envelope-fill"></i>
               </div>
               <div className="home-contact-v2-content">
                 <h3>{t('contact-email')}</h3>
-                <p className="home-contact-v2-value">lgualbaynv@gmail.com</p>
+                <p className="home-contact-v2-value">pgasecretariat@gmail.com</p>
                 <span className="home-contact-v2-note">{t('contact-response')}</span>
               </div>
             </a>
@@ -699,7 +699,7 @@ export default function HomePage() {
               <div className="home-contact-v2-content">
                 <h3>{t('contact-address')}</h3>
                 <p className="home-contact-v2-value">{t('contact-municipal-hall')}</p>
-                <span className="home-contact-v2-note">Albay, Philippines 3708</span>
+                <span className="home-contact-v2-note">Legazpi City, Albay 4500</span>
               </div>
             </div>
           </div>
