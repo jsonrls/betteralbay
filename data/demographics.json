@@ -1,18 +1,23 @@
 {
-  "_schema_version": "1.0",
-  "_status": "draft",
-  "_source": "Philippine Statistics Authority (PSA)",
-  "_note": "Awaiting official data from PSA / LGU Albay planning office",
+  "_schema_version": "2.0",
+  "_status": "verified",
+  "_source": "Philippine Statistics Authority (PSA) 2020 Census of Population and Housing",
   "municipality": "Albay",
-  "province": "Bicol Region",
-  "region": "Region II - Cagayan Valley",
+  "province": "Albay",
+  "region": "Region V - Bicol Region",
   "population": {
-    "total": 69296,
-    "year": 2024,
-    "source": "PSA Census"
+    "total": 1374768,
+    "year": 2020,
+    "source": "PSA 2020 Census"
   },
-  "land_area_km2": 162.7,
-  "barangay_count": 22,
+  "land_area_km2": 2574.91,
+  "barangay_count": 720,
   "income_class": "1st",
+  "administrative_divisions": {
+    "component_cities": 3,
+    "municipalities": 15,
+    "congressional_districts": 3,
+    "capital": "Legazpi City"
+  },
   "barangays": []
 }

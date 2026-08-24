@@ -184,7 +184,7 @@ export default function HomePage() {
                 <i className="bi bi-people-fill"></i>
               </div>
               <div className="home-stat-card-content">
-                <span className="home-stat-card-value">69,296</span>
+                <span className="home-stat-card-value">1,374,768</span>
                 <span className="home-stat-card-label">{t('stats-population-label')}</span>
                 <span className="home-stat-card-source">{t('stats-population-source')}</span>
               </div>
@@ -194,7 +194,7 @@ export default function HomePage() {
                 <i className="bi bi-geo-alt-fill"></i>
               </div>
               <div className="home-stat-card-content">
-                <span className="home-stat-card-value">22</span>
+                <span className="home-stat-card-value">720</span>
                 <span className="home-stat-card-label">{t('stats-barangays-label')}</span>
                 <span className="home-stat-card-source">{t('stats-barangays-source')}</span>
               </div>
@@ -214,7 +214,7 @@ export default function HomePage() {
                 <i className="bi bi-rulers"></i>
               </div>
               <div className="home-stat-card-content">
-                <span className="home-stat-card-value">162.70 km²</span>
+                <span className="home-stat-card-value">2,574.91 km²</span>
                 <span className="home-stat-card-label">{t('stats-land-area-label')}</span>
                 <span className="home-stat-card-source">{t('stats-land-area-source')}</span>
               </div>
@@ -298,53 +298,53 @@ export default function HomePage() {
           </div>
           <div className="history-content">
             <div className="history-timeline">
-              <div className="timeline-item" data-year="1760">
+              <div className="timeline-item" data-year="1569">
                 <div className="timeline-marker"></div>
                 <div className="timeline-content">
-                  <span className="timeline-year">1760</span>
-                  <p>{t('history-1760')}</p>
+                  <span className="timeline-year">1569</span>
+                  <p>{t('history-1569')}</p>
                 </div>
               </div>
-              <div className="timeline-item" data-year="1767">
+              <div className="timeline-item" data-year="1814">
                 <div className="timeline-marker"></div>
                 <div className="timeline-content">
-                  <span className="timeline-year">1767</span>
-                  <p>{t('history-1767')}</p>
+                  <span className="timeline-year">1814</span>
+                  <p>{t('history-1814')}</p>
                 </div>
               </div>
-              <div className="timeline-item" data-year="1768">
+              <div className="timeline-item" data-year="1834">
                 <div className="timeline-marker"></div>
                 <div className="timeline-content">
-                  <span className="timeline-year">1768</span>
-                  <p>{t('history-1768')}</p>
+                  <span className="timeline-year">1834</span>
+                  <p>{t('history-1834')}</p>
                 </div>
               </div>
-              <div className="timeline-item" data-year="1851">
+              <div className="timeline-item" data-year="1898">
                 <div className="timeline-marker"></div>
                 <div className="timeline-content">
-                  <span className="timeline-year">1851</span>
-                  <p>{t('history-1851')}</p>
+                  <span className="timeline-year">1898</span>
+                  <p>{t('history-1898')}</p>
                 </div>
               </div>
-              <div className="timeline-item" data-year="1853">
+              <div className="timeline-item" data-year="1945">
                 <div className="timeline-marker"></div>
                 <div className="timeline-content">
-                  <span className="timeline-year">1853</span>
-                  <p>{t('history-1853')}</p>
+                  <span className="timeline-year">1945</span>
+                  <p>{t('history-1945')}</p>
                 </div>
               </div>
-              <div className="timeline-item" data-year="1889">
+              <div className="timeline-item" data-year="2006">
                 <div className="timeline-marker"></div>
                 <div className="timeline-content">
-                  <span className="timeline-year">1889</span>
-                  <p>{t('history-1889')}</p>
+                  <span className="timeline-year">2006</span>
+                  <p>{t('history-2006')}</p>
                 </div>
               </div>
-              <div className="timeline-item" data-year="1957">
+              <div className="timeline-item" data-year="2020">
                 <div className="timeline-marker"></div>
                 <div className="timeline-content">
-                  <span className="timeline-year">1957</span>
-                  <p>{t('history-1957')}</p>
+                  <span className="timeline-year">2020</span>
+                  <p>{t('history-2020')}</p>
                 </div>
               </div>
             </div>

@@ -1,29 +1,7 @@
 {
-  "ordinances": [
-    {
-      "ordinanceNo": "2025-05-11",
-      "title": "An Ordinance Creating the Film Development Council of the Province of Albay, Bicol Region, Providing for Its Powers and Functions, and for Other Purposes",
-      "sessionDate": "2025-04-21"
-    },
-    {
-      "ordinanceNo": "2025-04-11",
-      "title": "An Ordinance Prohibiting the Entry of Nuisance Contraband Inside the Albay District Jail in the Province of Albay, Bicol Region, and Providing Penalties for Violation Thereof",
-      "sessionDate": "2025-04-21"
-    },
-    {
-      "ordinanceNo": "2025-03-11",
-      "title": "An Ordinance Creating the Albay Municipal Housing Board, Defining Its Powers and Functions, and for Other Purposes",
-      "sessionDate": "2025-03-03"
-    },
-    {
-      "ordinanceNo": "2025-02-11",
-      "title": "An Ordinance Requiring All Households in the Province of Albay, Bicol Region to Comply with Zero Open Defecation (ZOD), Providing for Its Guidelines and Penalties for Violation and Appropriating Funds Therefor",
-      "sessionDate": "2025-02-25"
-    },
-    {
-      "ordinanceNo": "2025-01-11",
-      "title": "An Ordinance Revising the Gender and Development Code of the Province of Albay, Bicol Region and for Other Purposes, Subject to All Laws and Existing Rules and Regulations",
-      "sessionDate": "2025-02-25"
-    }
-  ]
+  "_schema_version": "2.0",
+  "_status": "draft",
+  "_source": "Sangguniang Panlalawigan ng Albay \u2014 Provincial Board Secretariat",
+  "_note": "Awaiting official provincial ordinance records from the SP secretariat or albay.gov.ph.",
+  "ordinances": []
 }

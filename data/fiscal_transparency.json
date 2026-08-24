@@ -1,9 +1,9 @@
 {
-  "_schema_version": "1.0",
+  "_schema_version": "2.0",
   "_status": "draft",
-  "_source": "Bureau of Local Government Finance (BLGF) / LGU Albay Budget Office",
-  "_note": "Awaiting official fiscal data",
+  "_source": "Bureau of Local Government Finance (BLGF) / Albay Provincial Budget Office / COA Local Audit Reports",
+  "_note": "Awaiting official FY 2026 provincial budget and statement of income/expenditure figures. Do not display estimated values.",
   "municipality": "Albay",
-  "province": "Bicol Region",
+  "province": "Albay",
   "fiscal_years": []
 }

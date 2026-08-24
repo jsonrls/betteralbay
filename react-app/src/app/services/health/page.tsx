@@ -107,7 +107,7 @@ export default function HealthPage() {
         <div className="container">
           <div className="health-stats-grid">
             <div className="health-stat-card">
-              <span className="health-stat-num">88</span>
+              <span className="health-stat-num">18</span>
               <span className="health-stat-label">{t('health-stat-facilities')}</span>
             </div>
             <div className="health-stat-card">
@@ -115,7 +115,7 @@ export default function HealthPage() {
               <span className="health-stat-label">{t('health-stat-hospitals')}</span>
             </div>
             <div className="health-stat-card">
-              <span className="health-stat-num">22</span>
+              <span className="health-stat-num">720</span>
               <span className="health-stat-label">{t('health-stat-bhs')}</span>
             </div>
             <div className="health-stat-card">
@@ -136,42 +136,42 @@ export default function HealthPage() {
           <div className="health-facilities-grid">
             <div className="health-facility-card health-facility-card--hospital">
               <div className="health-facility-badge">Tertiary Hospital</div>
-              <h3>{t('health-pltciluis-a-tiam-medical-center')}</h3>
+              <h3>{t('health-hospital-brtth')}</h3>
               <p className="health-facility-desc">
-                {t('health-a-tertiary-level-philhealthaccredited-private')}
+                {t('health-hospital-brtth-desc')}
               </p>
               <div className="health-facility-meta">
                 <span>
                   <i className="bi bi-geo-alt"></i>
-                  <span>{t('health-national-highway-albay')}</span>
+                  <span>{t('health-hospital-brtth-address')}</span>
                 </span>
               </div>
             </div>
 
             <div className="health-facility-card health-facility-card--hospital">
-              <div className="health-facility-badge">Private Hospital</div>
-              <h3>{t('health-medical-mission-group-hospital-health-services')}</h3>
+              <div className="health-facility-badge">Provincial Hospital</div>
+              <h3>{t('health-hospital-provincial')}</h3>
               <p className="health-facility-desc">
-                {t('health-also-known-as-new-mmg-hospital-providing-quality')}
+                {t('health-hospital-provincial-desc')}
               </p>
               <div className="health-facility-meta">
                 <span>
                   <i className="bi bi-geo-alt"></i>
-                  <span>{t('health-bintawan-road-brgy-quezon')}</span>
+                  <span>{t('health-hospital-provincial-address')}</span>
                 </span>
               </div>
             </div>
 
             <div className="health-facility-card health-facility-card--hospital">
-              <div className="health-facility-badge">Medical Center</div>
-              <h3>{t('health-salubris-inc-salubris-medical-center')}</h3>
+              <div className="health-facility-badge">Provincial Hospital</div>
+              <h3>{t('health-hospital-ziga')}</h3>
               <p className="health-facility-desc">
-                {t('health-private-medical-center-offering-various')}
+                {t('health-hospital-ziga-desc')}
               </p>
               <div className="health-facility-meta">
                 <span>
                   <i className="bi bi-geo-alt"></i>
-                  <span>{t('health-national-highway-albay')}</span>
+                  <span>{t('health-hospital-ziga-address')}</span>
                 </span>
               </div>
             </div>
@@ -221,7 +221,7 @@ export default function HealthPage() {
         </div>
       </section>
 
-      {/* Barangay Health Stations */}
+      {/* Provincial Health Network */}
       <section className="section section-compact">
         <div className="container">
           <h2 className="section-title">
@@ -230,72 +230,11 @@ export default function HealthPage() {
           </h2>
           <p className="section-subtitle">{t('health-bhs-subtitle')}</p>
           <div className="health-bhs-grid">
-            <div className="health-bhs-item">
-              <span>{t('health-aggub-bhs')}</span>
-            </div>
-            <div className="health-bhs-item">
-              <span>{t('health-bagahabag-bhs')}</span>
-            </div>
-            <div className="health-bhs-item">
-              <span>{t('health-bangaan-bhs')}</span>
-            </div>
-            <div className="health-bhs-item">
-              <span>{t('health-bangar-bhs')}</span>
-            </div>
-            <div className="health-bhs-item">
-              <span>{t('health-buenavista-bhs')}</span>
-            </div>
-            <div className="health-bhs-item">
-              <span>{t('health-calaocan-bhs')}</span>
-            </div>
-            <div className="health-bhs-item">
-              <span>{t('health-commando-bhs')}</span>
-            </div>
-            <div className="health-bhs-item">
-              <span>{t('health-concepcion-bhs')}</span>
-            </div>
-            <div className="health-bhs-item">
-              <span>{t('health-curifang-bhs')}</span>
-            </div>
-            <div className="health-bhs-item">
-              <span>{t('health-dadap-bhs')}</span>
-            </div>
-            <div className="health-bhs-item">
-              <span>{t('health-lactawan-bhs')}</span>
-            </div>
-            <div className="health-bhs-item">
-              <span>{t('health-nangalisan-bhs')}</span>
-            </div>
-            <div className="health-bhs-item">
-              <span>{t('health-ocapon-bhs')}</span>
-            </div>
-            <div className="health-bhs-item">
-              <span>{t('health-osmea-bhs')}</span>
-            </div>
-            <div className="health-bhs-item">
-              <span>{t('health-paitan-bhs')}</span>
-            </div>
-            <div className="health-bhs-item">
-              <span>{t('health-pilar-bhs')}</span>
-            </div>
-            <div className="health-bhs-item">
-              <span>{t('health-poblacion-bhs')}</span>
-            </div>
-            <div className="health-bhs-item">
-              <span>{t('health-quezon-bhs')}</span>
-            </div>
-            <div className="health-bhs-item">
-              <span>{t('health-quirino-bhs')}</span>
-            </div>
-            <div className="health-bhs-item">
-              <span>{t('health-roxas-bhs')}</span>
-            </div>
-            <div className="health-bhs-item">
-              <span>{t('health-tucal-bhs')}</span>
-            </div>
-            <div className="health-bhs-item">
-              <span>{t('health-uddiawan-bhs')}</span>
-            </div>
+            {[1, 2, 3, 4, 5, 6].map((n) => (
+              <div className="health-bhs-item" key={n}>
+                <span>{t(`health-network-${n}`)}</span>
+              </div>
+            ))}
           </div>
         </div>
       </section>

@@ -5,6 +5,28 @@ import { createContext, useContext, useState, useEffect, ReactNode } from 'react
 // Translation data
 const translations: Record<string, Record<string, string>> = {
   en: {
+    'health-network-6': 'Health emergency and disaster response, including Mayon eruption preparedness',
+    'health-network-5': 'PhilHealth enrollment and universal health care assistance',
+    'health-network-4': 'Provincial Health Office public health programs — immunization, maternal care, TB-DOTS',
+    'health-network-3': 'District health offices covering the 1st, 2nd, and 3rd districts of Albay',
+    'health-network-2': 'Barangay Health Stations and Barangay Health Workers across 720 barangays',
+    'health-network-1': 'Rural Health Units in all 15 municipalities and 3 component cities',
+    'health-hospital-ziga-address': 'Tabaco City',
+    'health-hospital-ziga-desc': 'A provincial hospital serving the communities of northern Albay from Tabaco City.',
+    'health-hospital-ziga': 'Ziga Memorial Hospital',
+    'health-hospital-provincial-address': 'Legazpi City',
+    'health-hospital-provincial-desc': 'The provincial government’s chief hospital providing accessible quality healthcare services to Albayanos.',
+    'health-hospital-provincial': 'Albay Provincial Hospital',
+    'health-hospital-brtth-address': 'Legazpi City',
+    'health-hospital-brtth-desc': 'A DOH-retained tertiary teaching hospital serving as the premier medical referral center for the entire Bicol Region.',
+    'health-hospital-brtth': 'Bicol Regional Training and Teaching Hospital (BRTTH)',
+    'history-2020': 'Supertyphoon Rolly (Goni), the world’s strongest landfalling tropical cyclone of 2020, struck Albay — a test of the Albayanos’ renowned resilience.',
+    'history-2006': 'Typhoon Reming (Durian) devastated the province, prompting Albay to build one of the country’s strongest disaster-risk-reduction systems.',
+    'history-1945': 'The province was liberated from Japanese occupation during World War II, beginning postwar reconstruction.',
+    'history-1898': 'Albay joined the revolutionary government during the Philippine Revolution, ending more than three centuries of Spanish rule.',
+    'history-1834': 'Albay was organized as a province under Spanish administration, with Legazpi eventually becoming its capital.',
+    'history-1814': 'Mayon Volcano’s most destructive eruption buried the town of Cagsawa under lava and lahar; only the church belfry survives today as the iconic Cagsawa Ruins.',
+    'history-1569': 'Spanish expeditions reached the Bicol peninsula, then part of the region called Ibalon, whose fertile valleys would later become Albay.',
     // Navigation
     'nav-home': 'Home',
     'nav-services': 'Services',
@@ -15,7 +37,7 @@ const translations: Record<string, Record<string, string>> = {
     'nav-contact': 'Contact',
 
     // Appointment CTA
-    'appointment-cta-heading': "Enhancing Appointment Services of LGU Albay Mayor's Office",
+    'appointment-cta-heading': 'Enhancing Appointment Services of the Office of the Provincial Governor of Albay',
     'appointment-cta-subtitle': 'No lines. No back-and-forth. Just efficient appointments.',
     'appointment-schedule-btn': 'Schedule Appointment',
     'appointment-create-btn': 'Create Account',
@@ -147,57 +169,20 @@ const translations: Record<string, Record<string, string>> = {
     'health-maternal-desc': 'Prenatal and postnatal health services',
     'health-medicine': 'Medicine Assistance',
     'health-medicine-desc': 'Financial assistance for medicines through MSWDO',
-    'health-stat-facilities': 'Total Health Facilities',
-    'health-stat-hospitals': 'Major Hospitals',
-    'health-stat-bhs': 'Barangay Health Stations',
-    'health-stat-mho': 'Municipal Health Office',
-    'health-section-hospitals': 'Hospitals in Albay',
-    'health-section-mho': 'Municipal Health Office',
-    'health-section-bhs': 'Barangay Health Stations',
-    'health-bhs-subtitle': '22 Barangay Health Stations/Centers serving all barangays of Albay',
-    'health-mho-title': 'Albay Municipal Health Office',
-    'health-mho-desc':
-      'The Municipal Health Office provides primary healthcare services including a lying-in facility and laboratory services. It serves as the main public health center for the municipality.',
+    'health-stat-facilities': 'LGUs with Rural Health Units',
+    'health-stat-hospitals': 'Major Public Hospitals',
+    'health-stat-mho': 'Provincial Health Office',
+    'health-section-hospitals': 'Public Hospitals in Albay',
+    'health-section-mho': 'Provincial Health Office',
+    'health-bhs-subtitle': 'Provincial hospitals and rural health units serving all 18 LGUs and 720 barangays of Albay.',
+    'health-mho-title': 'Albay Provincial Health Office (PHO)',
+    'health-mho-desc': 'The Provincial Health Office oversees public health programs, district hospitals, and rural health units across the province’s three districts.',
     'health-service-lying-in': 'Lying-in Facility',
     'health-service-laboratory': 'Laboratory Services',
     'health-service-immunization': 'Immunization',
     'health-service-prenatal': 'Prenatal Care',
     'health-service-family-planning': 'Family Planning',
     'health-service-tb-dots': 'TB-DOTS',
-    'health-pltciluis-a-tiam-medical-center': 'PLTCI-Luis A. Tiam Medical Center',
-    'health-a-tertiary-level-philhealthaccredited-private':
-      'A tertiary level, PhilHealth-accredited private hospital providing comprehensive medical services.',
-    'health-national-highway-albay': 'National Highway, Albay',
-    'health-medical-mission-group-hospital-health-services':
-      'Medical Mission Group Hospital & Health Services Cooperative',
-    'health-also-known-as-new-mmg-hospital-providing-quality':
-      'Also known as New MMG Hospital, providing quality healthcare services to the community.',
-    'health-bintawan-road-brgy-quezon': 'Bintawan Road, Brgy. Quezon',
-    'health-salubris-inc-salubris-medical-center': 'SALUBRIS, INC. (Salubris Medical Center)',
-    'health-private-medical-center-offering-various':
-      'Private medical center offering various healthcare and diagnostic services.',
-    'health-aggub-bhs': 'Aggub BHS',
-    'health-bagahabag-bhs': 'Bagahabag BHS',
-    'health-bangaan-bhs': 'Bangaan BHS',
-    'health-bangar-bhs': 'Bangar BHS',
-    'health-buenavista-bhs': 'Buenavista BHS',
-    'health-calaocan-bhs': 'Calaocan BHS',
-    'health-commando-bhs': 'Commando BHS',
-    'health-concepcion-bhs': 'Concepcion BHS',
-    'health-curifang-bhs': 'Curifang BHS',
-    'health-dadap-bhs': 'Dadap BHS',
-    'health-lactawan-bhs': 'Lactawan BHS',
-    'health-nangalisan-bhs': 'Nangalisan BHS',
-    'health-ocapon-bhs': 'Ocapon BHS',
-    'health-osmea-bhs': 'Osmeña BHS',
-    'health-paitan-bhs': 'Paitan BHS',
-    'health-pilar-bhs': 'Pilar BHS',
-    'health-poblacion-bhs': 'Poblacion BHS',
-    'health-quezon-bhs': 'Quezon BHS',
-    'health-quirino-bhs': 'Quirino BHS',
-    'health-roxas-bhs': 'Roxas BHS',
-    'health-tucal-bhs': 'Tucal BHS',
-    'health-uddiawan-bhs': 'Uddiawan BHS',
     'health-hivcare-cta-eyebrow': 'Official DOH-Sourced Directory',
     'health-hivcare-cta-heading': 'Find HIV Treatment & Care Facilities Near You',
     'health-hivcare-cta-desc':
@@ -383,20 +368,16 @@ const translations: Record<string, Record<string, string>> = {
     'stats-at-a-glance': 'Albay at a Glance',
     'stats-view-statistics': 'View Statistics',
     'stats-population-label': 'Population',
-    'stats-population-source': '2024 Census',
+    'stats-population-source': 'PSA 2020 Census',
     'stats-barangays-label': 'Barangays',
     'stats-barangays-source': 'Administrative Units',
-    'stats-municipality-label': 'Municipality',
+    'stats-municipality-label': 'Province',
     'stats-municipality-source': 'Income Classification',
     'stats-land-area-label': 'Land Area',
-    'stats-land-area-source': 'Total Municipal Area',
-
-    // Homepage - Weather & Map
+    'stats-land-area-source': 'Total Provincial Land Area',
     'weather-map-title': 'Weather and Map of Albay',
     'weather-mainly-clear': 'Mainly clear',
-    'weather-location': 'Albay, Philippines',
-
-    // Homepage - History
+    'weather-location': 'Legazpi City, Albay',
     'history-title': 'Brief History of Albay',
     'history-1760':
       'The original name of the town was Bintauan, then a Gaddang settlement that is now a barangay of Villaverde.',
@@ -412,27 +393,19 @@ const translations: Record<string, Record<string, string>> = {
       'Renamed Albay in honor of Governor General Ramon Albay y Llanderal. The town was redeveloped by Father Juan Villaverde with 14 parallel wide streets, each 20 meters wide, forming 100 square blocks.',
     'history-1957':
       "The barrios of Ibung and Bintawan were separated to form the town of Ibung, later renamed as Villaverde. Albay's land area was reduced to 13,980 hectares.",
-    'history-once-largest-title': 'Once the Largest',
-    'history-once-largest-desc':
-      'Albay was the largest municipality in the province until Caliat and Bintawan were separated to become Quezon and Villaverde respectively.',
-    'history-urban-planning-title': 'Urban Planning',
-    'history-urban-planning-desc':
-      'The 1889 redevelopment created a grid of 100 square blocks, each with an aggregate area of one hectare, with streets running north-south and east-west.',
-
-    // Homepage - News
+    'history-once-largest-title': 'Home of Mayon Volcano',
+    'history-once-largest-desc': 'Mayon, the Philippines’ most active volcano at 2,463 meters, is famed worldwide for its near-perfect conical shape.',
+    'history-urban-planning-title': 'Gateway to Bicol',
+    'history-urban-planning-desc': 'With Legazpi City as the regional hub, Albay is the administrative, educational, and transportation center of the Bicol Region.',
     'news-announcement': 'Announcement',
     'news-project': 'Project',
     'news-advisory': 'Advisory',
-    'news-business-permit-title': 'Business Permit Renewal 2025',
-    'news-business-permit-desc':
-      'Deadline for business permit renewal is set for January 20, 2025. Early renewal is encouraged.',
-    'news-market-title': 'New Public Market Wing Opens',
-    'news-market-desc':
-      'The renovated wing of the Albay Public Market is now open to vendors and the public.',
-    'news-power-title': 'Scheduled Power Interruption',
-    'news-power-desc': 'Maintenance scheduled for Barangay Osmeña on Dec 1, 8:00 AM - 5:00 PM.',
-
-    // Homepage - Quiz CTA
+    'news-business-permit-title': 'BetterAlbay.org Is Now Online',
+    'news-business-permit-desc': 'The community-built transparency portal for Albay Province has launched its first release.',
+    'news-market-title': 'Community Volunteers Welcome',
+    'news-market-desc': 'Developers, researchers, and writers can help gather and verify public data for the portal.',
+    'news-power-title': 'Official Data Sources Being Compiled',
+    'news-power-desc': 'Officials, demographics, and services data are being compiled from official government portals.',
     'quiz-title': 'Albay Quiz',
     'quiz-subtitle': 'How well do you know Albay, Philippines?',
     'quiz-description':
@@ -467,6 +440,20 @@ const translations: Record<string, Record<string, string>> = {
     'footer-skip-to-main': 'Skip to main content',
   },
   fil: {
+    'health-hospital-ziga-address': 'Lungsod ng Tabaco',
+    'health-hospital-ziga': 'Ziga Memorial Hospital',
+    'health-hospital-provincial-address': 'Lungsod ng Legazpi',
+    'health-hospital-provincial': 'Albay Provincial Hospital',
+    'health-hospital-brtth-address': 'Lungsod ng Legazpi',
+    'health-hospital-brtth': 'Bicol Regional Training and Teaching Hospital (BRTTH)',
+    'health-section-bhs': 'Panlalawigang Network ng Kalusugan',
+    'history-2020': 'Tumama sa Albay ang Supertyphoon Rolly (Goni), pinakamalakas na bagyong tumama sa mundo noong 2020 — pagsubok sa kilalang katatagan ng mga Albayano.',
+    'history-2006': 'Winasak ng Typhoon Reming (Durian) ang lalawigan, na nagtulak sa Albay na buuin ang isa sa pinakamalalim na disaster-risk-reduction system sa bansa.',
+    'history-1945': 'Napalaya ang lalawigan mula sa pananakop ng mga Hapones noong Ikalawang Digmaang Pandaigdig, sinimulan ang muling pagtatayo.',
+    'history-1898': 'Sumali ang Albay sa rebolusyonaryong pamahalaan sa panahon ng Rebolusyong Pilipino, na wakas ng mahigit tatlong siglong pananakop ng mga Kastila.',
+    'history-1834': 'Inorganisa ang Albay bilang isang lalawigan sa ilalim ng pamahalaang Kastila, at naging kabisera ang Legazpi.',
+    'history-1814': 'Ang pinakanakamamatay na pagsabog ng Bulkang Mayon ay nalibing sa bayan ng Cagsawa sa lahar at lava; tanging kampanaryo ng simbahan ang natira ngayon — ang sikat na Cagsawa Ruins.',
+    'history-1569': 'Dumating ang mga eksplorasyong Kastila sa tangway ng Bicol, bahagi noon ng rehiyong tinaguriang Ibalon, na ang mga mayamong lambak ay magiging Albay balang-araw.',
     // Navigation - Filipino
     'nav-home': 'Tahanan',
     'nav-services': 'Mga Serbisyo',
@@ -477,8 +464,7 @@ const translations: Record<string, Record<string, string>> = {
     'nav-contact': 'Makipag-ugnayan',
 
     // Appointment CTA
-    'appointment-cta-heading':
-      'Pagpapahusay ng Serbisyo sa Appointment ng Opisina ng Alkalde ng LGU Albay',
+    'appointment-cta-heading': 'Pagpapahusay ng Serbisyo sa Appointment ng Tanggapan ng Gubernador ng Lalawigan ng Albay',
     'appointment-cta-subtitle': 'Walang pila. Walang pabalik-balik. Mahusay na appointment lang.',
     'appointment-schedule-btn': 'Mag-iskedyul ng Appointment',
     'appointment-create-btn': 'Gumawa ng Account',
@@ -618,14 +604,11 @@ const translations: Record<string, Record<string, string>> = {
     'health-medicine-desc': 'Tulong pinansyal para sa gamot sa pamamagitan ng MSWDO',
     'health-stat-facilities': 'Kabuuang Pasilidad sa Kalusugan',
     'health-stat-hospitals': 'Mga Pangunahing Ospital',
-    'health-stat-bhs': 'Mga Barangay Health Station',
     'health-stat-mho': 'Opisina ng Kalusugan ng Munisipalidad',
-    'health-section-hospitals': 'Mga Ospital sa Albay',
-    'health-section-mho': 'Opisina ng Kalusugan ng Munisipalidad',
-    'health-section-bhs': 'Mga Barangay Health Station',
-    'health-bhs-subtitle':
-      '22 Barangay Health Stations/Centers na naglilingkod sa lahat ng barangay ng Albay',
-    'health-mho-title': 'Opisina ng Kalusugan ng Lalawigan ng Albay',
+    'health-section-hospitals': 'Mga Pampublikong Ospital sa Albay',
+    'health-section-mho': 'Panlalawigang Opisina ng Kalusugan',
+    'health-bhs-subtitle': 'Mga panlalawigang ospital at rural health units na naglilingkod sa 18 LGU at 720 barangay ng Albay.',
+    'health-mho-title': 'Albay Provincial Health Office (PHO)',
     'health-mho-desc':
       'Ang Municipal Health Office ay nagbibigay ng pangunahing serbisyo sa kalusugan kabilang ang lying-in facility at laboratory services. Ito ang pangunahing public health center ng munisipalidad.',
     'health-service-lying-in': 'Lying-in Facility',
@@ -637,7 +620,6 @@ const translations: Record<string, Record<string, string>> = {
     'health-pltciluis-a-tiam-medical-center': 'PLTCI-Luis A. Tiam Medical Center',
     'health-a-tertiary-level-philhealthaccredited-private':
       'A tertiary level, PhilHealth-accredited pribadong hospital nagbibigay ng komprehensibong mga serbisyong medikal.',
-    'health-national-highway-albay': 'Pambansa Highway, Albay',
     'health-medical-mission-group-hospital-health-services':
       'Medical Mission Group Hospital & Health Mga serbisyo Cooperative',
     'health-also-known-as-new-mmg-hospital-providing-quality':
@@ -646,28 +628,6 @@ const translations: Record<string, Record<string, string>> = {
     'health-salubris-inc-salubris-medical-center': 'SALUBRIS, INC. (Salubris Medical Center)',
     'health-private-medical-center-offering-various':
       'Pribado medical center offering various healthcare and diagnostic mga serbisyo.',
-    'health-aggub-bhs': 'Aggub BHS',
-    'health-bagahabag-bhs': 'Bagahabag BHS',
-    'health-bangaan-bhs': 'Bangaan BHS',
-    'health-bangar-bhs': 'Bangar BHS',
-    'health-buenavista-bhs': 'Buenavista BHS',
-    'health-calaocan-bhs': 'Calaocan BHS',
-    'health-commando-bhs': 'Commando BHS',
-    'health-concepcion-bhs': 'Concepcion BHS',
-    'health-curifang-bhs': 'Curifang BHS',
-    'health-dadap-bhs': 'Dadap BHS',
-    'health-lactawan-bhs': 'Lactawan BHS',
-    'health-nangalisan-bhs': 'Nangalisan BHS',
-    'health-ocapon-bhs': 'Ocapon BHS',
-    'health-osmea-bhs': 'Osmeña BHS',
-    'health-paitan-bhs': 'Paitan BHS',
-    'health-pilar-bhs': 'Pilar BHS',
-    'health-poblacion-bhs': 'Poblacion BHS',
-    'health-quezon-bhs': 'Quezon BHS',
-    'health-quirino-bhs': 'Quirino BHS',
-    'health-roxas-bhs': 'Roxas BHS',
-    'health-tucal-bhs': 'Tucal BHS',
-    'health-uddiawan-bhs': 'Uddiawan BHS',
     'health-hivcare-cta-eyebrow': 'Opisyal na Direktoryo mula sa DOH',
     'health-hivcare-cta-heading': 'Hanapin ang Pasilidad para sa Paggamot at Pangangalaga sa HIV',
     'health-hivcare-cta-desc':
@@ -857,10 +817,10 @@ const translations: Record<string, Record<string, string>> = {
     'stats-at-a-glance': 'Isang Tingin sa Albay',
     'stats-view-statistics': 'Tingnan ang Estadistika',
     'stats-population-label': 'Populasyon',
-    'stats-population-source': '2024 Senso',
+    'stats-population-source': 'PSA 2020 Census',
     'stats-barangays-label': 'Mga Barangay',
     'stats-barangays-source': 'Mga Yunit Administratibo',
-    'stats-municipality-label': 'Munisipalidad',
+    'stats-municipality-label': 'Lalawigan',
     'stats-municipality-source': 'Klasipikasyon ng Kita',
     'stats-land-area-label': 'Lawak ng Lupa',
     'stats-land-area-source': 'Kabuuang Lawak ng Munisipalidad',
@@ -868,9 +828,7 @@ const translations: Record<string, Record<string, string>> = {
     // Homepage - Weather & Map
     'weather-map-title': 'Panahon at Mapa ng Albay',
     'weather-mainly-clear': 'Halos maaliwalas',
-    'weather-location': 'Albay, Philippines',
-
-    // Homepage - History
+    'weather-location': 'Lungsod ng Legazpi, Albay',
     'history-title': 'Maikling Kasaysayan ng Albay',
     'history-1760':
       'Ang orihinal na pangalan ng bayan ay Bintauan, isang pamayanan ng Gaddang na ngayon ay barangay ng Villaverde.',
@@ -886,28 +844,19 @@ const translations: Record<string, Record<string, string>> = {
       'Pinalitan ang pangalan ng Albay bilang parangal kay Gobernador Heneral Ramon Albay y Llanderal. Ang bayan ay muling binuo ni Padre Juan Villaverde na may 14 na magkakahanay na malapad na kalye, bawat isa ay 20 metro ang lapad, na bumubuo ng 100 parisukat na bloke.',
     'history-1957':
       'Ang mga baryo ng Ibung at Bintawan ay pinaghiwalay upang bumuo ng bayan ng Ibung, na kalaunan ay pinalitan ng pangalang Villaverde. Ang lawak ng lupa ng Albay ay nabawasan sa 13,980 ektarya.',
-    'history-once-largest-title': 'Dating Pinakamalaki',
-    'history-once-largest-desc':
-      'Ang Albay ang pinakamalaking munisipalidad sa probinsya hanggang sa pinaghiwalay ang Caliat at Bintawan upang maging Quezon at Villaverde.',
-    'history-urban-planning-title': 'Pagpaplano ng Lungsod',
-    'history-urban-planning-desc':
-      'Ang muling pagbuo noong 1889 ay lumikha ng grid na may 100 parisukat na bloke, bawat isa ay may kabuuang lawak na isang ektarya, na may mga kalye na patungo sa hilaga-timog at silangan-kanluran.',
-
-    // Homepage - News
+    'history-once-largest-title': 'Tahanan ng Bulkang Mayon',
+    'history-once-largest-desc': 'Ang Mayon, pinakamaktibong bulkan ng Pilipinas sa taas na 2,463 metro, ay kilala sa buong mundo halos perpektong hugis-cone.',
+    'history-urban-planning-title': 'Tarangkapan ng Bicol',
+    'history-urban-planning-desc': 'Bilang rehiyonal na sentro ang Lungsod ng Legazpi, ang Albay ang sentrong administratibo, edukasyon, at transportasyon ng Rehiyon Bicol.',
     'news-announcement': 'Anunsyo',
     'news-project': 'Proyekto',
     'news-advisory': 'Abiso',
-    'news-business-permit-title': 'Pag-renew ng Permit sa Negosyo 2025',
-    'news-business-permit-desc':
-      'Ang deadline para sa pag-renew ng permit sa negosyo ay Enero 20, 2025. Hinihikayat ang maagang pag-renew.',
-    'news-market-title': 'Bagong Wing ng Pampublikong Palengke Bukas Na',
-    'news-market-desc':
-      'Ang na-renovate na wing ng Pampublikong Palengke ng Albay ay bukas na sa mga nagtitinda at publiko.',
-    'news-power-title': 'Nakaiskedyul na Pagkaputol ng Kuryente',
-    'news-power-desc':
-      'Maintenance na nakaiskedyul para sa Barangay Osmeña sa Dis 1, 8:00 AM - 5:00 PM.',
-
-    // Homepage - Quiz CTA
+    'news-business-permit-title': 'Online Na Ang BetterAlbay.org',
+    'news-business-permit-desc': 'Inilunsad na ang unang release ng transparency portal para sa Lalawigan ng Albay, binuo ng komunidad.',
+    'news-market-title': 'Welcome Mga Boluntaryo',
+    'news-market-desc': 'Maaaring tumulong ang mga developer, mananaliksik, at manunulat sa pangangalap at pagpapatunay ng pampublikong datos.',
+    'news-power-title': 'Binubuo ang mga Opisyal na Pinagkukunan ng Datos',
+    'news-power-desc': 'Kinokolekta ang datos ng mga opisyal, demograpiya, at serbisyo mula sa mga opisyal na portal ng gobyerno.',
     'quiz-title': 'Albay Quiz',
     'quiz-subtitle': 'Gaano mo kakilala ang Albay, Philippines?',
     'quiz-description':
@@ -941,488 +890,85 @@ const translations: Record<string, Record<string, string>> = {
       'Lahat ng pampublikong impormasyon ay mula sa mga opisyal na portal ng pamahalaan.',
     'footer-skip-to-main': 'Lumaktaw sa pangunahing nilalaman',
   },
-  ilo: {
-    // Navigation - Ilocano
-    'nav-home': 'Pagtaengan',
-    'nav-services': 'Dagiti Serbisyo',
-    'nav-government': 'Gobierno',
+  bik: {
+    // Central Bikol — core UI strings.
+    // Keys not listed here automatically fall back to English via t().
+    // Community contributors are welcome to expand this set.
+
+    // Navigation
+    'nav-home': 'Harong',
+    'nav-services': 'Mga Serbisyo',
+    'nav-government': 'Gobyerno',
     'nav-statistics': 'Estadistika',
-    'nav-legislative': 'Lehislatura',
-    'nav-transparency': 'Transparensiya',
-    'nav-contact': 'Kontaken',
+    'nav-legislative': 'Lehislatibo',
+    'nav-transparency': 'Transparansiya',
+    'nav-contact': 'Kontak',
+
+    // Hero Section
+    'hero-welcome': 'Dagos sa BetterAlbay.org!',
+    'hero-subtitle':
+      'Akseson an mga serbisyo kan gobyerno, impormasyon, asin mga rekursos para sa mga taga-Albay, Pilipinas.',
+    'hero-find-service': 'Hanapon an Serbisyo',
 
     // Appointment CTA
     'appointment-cta-heading':
-      'Panagpasayaat ti Serbisio ti Appointment ti Opisina ti Alkalde ti LGU Albay',
-    'appointment-cta-subtitle': 'Awan pila. Awan agpapasubli. Nasayaat nga appointment laeng.',
-    'appointment-schedule-btn': 'Ag-iskedyul ti Appointment',
-    'appointment-create-btn': 'Agaramid ti Account',
-
-    // Hero Section
-    'hero-welcome': 'Naragsak nga Isasangbay iti BetterAlbay.org',
-    'hero-subtitle':
-      'Aksesen dagiti serbisyo ti gobierno, impormasyon, ken dagiti resources para kadagiti umili ti Albay, Philippines.',
-    'hero-find-service': 'Agsapul ti Serbisyo',
+      'Pinapakarhay an mga Serbisyo nin Appointment kan Opisina nin Gobernador kan Albay',
+    'appointment-cta-subtitle': 'Mayo singil. Mayo balikan. Marhay na appointment sana.',
+    'appointment-schedule-btn': 'Mag-iskedyul nin Appointment',
+    'appointment-create-btn': 'Gumibo nin Account',
 
     // Popular Services
-    'section-popular': 'Dagiti Popular a Serbisyo',
-    'service-certificates': 'Dagiti Sertipiko',
-    'service-certificates-desc': 'Sertipiko ti pannakayanak, kasar, ken patay',
-    'service-business': 'Permit ti Negosyo',
-    'service-business-desc': 'Baro a permit ken panagrenew',
-    'service-tax': 'Panagbayad ti Buwis',
-    'service-tax-desc': 'Buwis ti sanikua ken negosyo',
-    'service-social': 'Serbisyo Sosyal',
-    'service-social-desc': 'Serbisyo para kadagiti senior citizen ken PWD',
-    'service-health': 'Serbisyo ti Salun-at',
-    'service-health-desc': 'Tulong medikal ken dagiti programa',
-    'btn-view-all-services': 'Kitaen Amin a Serbisyo',
+    'section-popular': 'Mga Popular na Serbisyo',
+    'service-certificates': 'Mga Sertipiko',
+    'service-certificates-desc': 'Sertipiko kan pagkamundag, kasal, asin kagadanan',
+    'service-business': 'Permit sa Negosyo',
+    'service-business-desc': 'Bagong permit asin pag-renew',
+    'service-tax': 'Pagbayad nin Buwis',
+    'service-tax-desc': 'Buwis sa pagsadiri asin negosyo',
+    'service-social': 'Serbisyong Sosyal',
+    'service-social-desc': 'Serbisyo para sa senior citizen asin PWD',
+    'service-health': 'Serbisyo sa Salog',
+    'service-health-desc': 'Tabang medikal asin mga programa',
+    'btn-view-all-services': 'Hilingon an gabos na Serbisyo',
 
-    // Latest Updates
-    'section-updates': 'Kabarbaro nga Update',
-    'btn-view-all': 'Kitaen Amin',
+    // Latest Updates / Stats / History / Weather
+    'section-updates': 'Mga Pinakabagong Update',
+    'btn-view-all': 'Hilingon Gabos',
+    'stats-at-a-glance': 'An Albay Sa Sarong Dolok',
+    'stats-view-statistics': 'Hilingon an Estadistika',
+    'stats-population-label': 'Populasyon',
+    'stats-barangays-label': 'Barangay',
+    'stats-municipality-label': 'Probinsya',
+    'stats-land-area-label': 'Hiwas nin Daga',
+    'weather-map-title': 'Panahon asin Mapa kan Albay',
+    'weather-location': 'Syudad nin Legazpi, Albay',
+    'history-title': 'Halipot na Kasaysayan kan Albay',
 
-    // Municipal Leadership
-    'section-leadership': 'Panguluan ti Munisipalidad',
-    'title-mayor': 'Mayor ti Munisipalidad',
-    'title-vice-mayor': 'Bise Mayor ti Munisipalidad',
-    'btn-view-officials': 'Kitaen Amin nga Opisyal',
-
-    // Contact Section
-    'section-contact': 'Impormasyon ti Panagkontak',
-    'contact-phone': 'Telepono',
-    'contact-email': 'Email',
-    'contact-address': 'Adres',
-    'contact-hours': 'Lunes-Biernes: 8:00 AM - 5:00 PM',
-    'contact-response': 'Sumungbat kami iti uneg ti 24 nga oras',
-    'contact-municipal-hall': 'Munisipio',
-
-    // Services Page
-    'services-title': 'Direktorio ti Serbisyo ti Munisipalidad',
-    'services-subtitle': 'Kitaen amin a serbisyo nga idatag ti Munisipalidad ti Albay',
-    'life-events-title': 'Agsapul Segun iti Pasamak iti Biag',
-    'life-events-subtitle': 'Biroken dagiti serbisyo segun iti mapasamak iti biagmo',
-    'life-starting-business': 'Mangrugi ti Negosyo',
-    'life-getting-married': 'Agkasar',
-    'life-having-baby': 'Addaan ti Ubing',
-    'life-financial-help': 'Kasapulan ti Tulong Pinansyal',
-    'life-senior': 'Serbisyo para kadagiti Senior Citizen',
-    'life-pwd': 'Tao nga Addaan Kapansanan',
-    'life-building': 'Panagbangon/Panagpasayaat ti Balay',
-    'life-trouble': 'Nairaman iti Problema',
-
-    // Service Categories
-    'cat-certificates': 'Dagiti Sertipiko ken Vital Records',
-    'cat-certificates-desc':
-      'Sertipiko ti pannakayanak, patay, kasar, ken dadduma pay a vital records.',
-    'cat-business': 'Negosyo ken Kalakalan',
-    'cat-business-desc':
-      'Dagiti permit ti negosyo, lisensya, ken serbisyo ti panagparehistro ti kalakalan.',
-    'cat-social': 'Serbisyo Sosyal',
-    'cat-social-desc':
-      'Dagiti programa ti welfare, serbisyo para kadagiti senior citizen, benepisyo ti PWD, ken tulong pinansyal.',
-    'cat-health': 'Salun-at ken Wellness',
-    'cat-health-desc': 'Dagiti programa ti bakuna, health certificates, ken tulong medikal.',
-    'cat-tax': 'Panagbuwis ken Panagbayad',
-    'cat-tax-desc': 'Buwis ti sanikua, buwis ti negosyo, panagbayad, ken tax clearance.',
-    'cat-agriculture': 'Agrikultura',
-    'cat-agriculture-desc':
-      'Dagiti pautang ti agrikultura, insurance ti mula, tulong ti abono, ken panagsanay.',
-    'cat-infrastructure': 'Imprastraktura',
-    'cat-infrastructure-desc':
-      'Dagiti permit ti konstruksyon, dawat ti panagmantener ti kalsada, ken pampubliko a pasilidad.',
-    'cat-education': 'Edukasyon ken Iskolarship',
-    'cat-education-desc':
-      'Dagiti programa ti iskolarship, tulong ti estudiante, ken dagiti grant ti edukasyon.',
-    'cat-safety': 'Kinatalged ti Publiko',
-    'cat-safety-desc':
-      'Dagiti serbisyo ti emergency, panagisagana ti kalamidad, ken dagiti programa ti kinatalged ti komunidad.',
-    'cat-environment': 'Aglawlaw',
-    'cat-environment-desc':
-      'Dagiti permit ti aglawlaw, panagtaripato ti basura, ken dagiti programa ti konserbasyon.',
-
-    // FAQ Page
-    'faq-title': 'Masansan a Maisaludsod',
-    'faq-subtitle':
-      'Biruken dagiti sungbat kadagiti gagangay a saludsod maipapan kadagiti serbisyo ti munisipalidad',
-    'faq-general': 'Dagiti Gagangay a Saludsod',
-    'faq-certificates': 'Dagiti Sertipiko ken Dokumento',
-    'faq-business': 'Negosyo ken Permit',
-    'faq-payments': 'Panagbayad ken Bayadan',
-    'faq-social': 'Serbisyo Sosyal',
-    'faq-technical': 'Dagiti Teknikal a Saludsod',
-    'faq-still-questions': 'Adda pay saludsodyo?',
-    'faq-contact-help':
-      'No saandayo a nasarakan ti sungbat a sapulenyo, dikay agmuna nga agkontak kadakami.',
-
-    // Common Labels - Ilocano
-    'label-fee': 'Bayad:',
-    'label-time': 'Tiempo:',
-    'label-free': 'Libre',
-    'label-varies': 'Agdumaduma',
-    'label-walk-in': 'Walk-in',
-    'label-seasonal': 'Panawen',
-    'label-1-day': '1 aldaw',
-    'label-1-2-days': '1-2 aldaw',
-    'label-3-5-days': '3-5 aldaw',
-    'section-responsible-offices': 'Dagiti Responsable nga Opisina',
-
-    // Health Page - Ilocano
-    'health-page-title': 'Serbisio ti Salun-at',
-    'health-page-desc': 'Dagiti konsulta medikal, bakuna, ken programa ti salun-at',
-    'health-page-badge': 'Salun-at',
-    'health-consultation': 'Konsulta Medikal',
-    'health-consultation-desc': 'Libre a konsulta kadagiti Rural Health Units',
-    'health-vaccination': 'Dagiti Programa ti Bakuna',
-    'health-vaccination-desc': 'Libre nga immunization para kadagiti ubbing ken nataengan',
-    'health-prenatal': 'Prenatal Care',
-    'health-prenatal-desc': 'Libre a prenatal checkups ken serbisio',
-    'health-dental': 'Serbisio Dental',
-    'health-dental-desc': 'Basiko a dental care ken panagbunot',
-    'health-stats-title': 'Estadistika ti Salun-at',
-    'health-rhu': 'Rural Health Units',
-    'health-bhw': 'Barangay Health Workers',
-    'health-hospitals-title': 'Dagiti Ospital iti Lugar',
-    'label-schedule-varies': 'Agduduma ti iskedyul',
-    'label-by-appointment': 'Babaen ti appointment',
-    'label-free-subsidy': 'Libre (subsidiya)',
-    'label-1-3-days': '1-3 nga aldaw',
-    'health-maternal': 'Panangaywan iti Ina',
-    'health-maternal-desc': 'Serbisio ti salun-at sakbay ken kalpasan ti panaganak',
-    'health-medicine': 'Tulong iti Agas',
-    'health-medicine-desc': 'Tulong pinansyal para iti agas babaen ti MSWDO',
-    'health-stat-facilities': 'Dagup a Pasilidad ti Salun-at',
-    'health-stat-hospitals': 'Dagiti Kangrunaan nga Ospital',
-    'health-stat-bhs': 'Dagiti Barangay Health Station',
-    'health-stat-mho': 'Opisina ti Salun-at ti Munisipalidad',
-    'health-section-hospitals': 'Dagiti Ospital idiay Albay',
-    'health-section-mho': 'Opisina ti Salun-at ti Munisipalidad',
-    'health-section-bhs': 'Dagiti Barangay Health Station',
-    'health-bhs-subtitle':
-      '22 a Barangay Health Stations/Centers a mangserserbisio iti amin a barangay ti Albay',
-    'health-mho-title': 'Opisina ti Salun-at ti Munisipalidad ti Albay',
-    'health-mho-desc':
-      'Ti Municipal Health Office ket mangted ti kangrunaan a serbisio ti salun-at a mairaman ti lying-in facility ken serbisio ti laboratorio. Daytoy ti kangrunaan a public health center ti munisipalidad.',
-    'health-service-lying-in': 'Lying-in Facility',
-    'health-service-laboratory': 'Serbisio ti Laboratorio',
-    'health-service-immunization': 'Immunisasion',
-    'health-service-prenatal': 'Panangyawan Sakbay Panaganak',
-    'health-service-family-planning': 'Panagplano ti Pamilya',
-    'health-service-tb-dots': 'TB-DOTS',
-    'health-pltciluis-a-tiam-medical-center': 'PLTCI-Luis A. Tiam Medical Center',
-    'health-a-tertiary-level-philhealthaccredited-private':
-      'A tertiary level, PhilHealth-accredited pribadong hospital nagbibigay ti komprehensibong dagiti serbisyong medikal.',
-    'health-national-highway-albay': 'Nailian Highway, Albay',
-    'health-medical-mission-group-hospital-health-services':
-      'Medical Mission Group Hospital & Health Dagiti serbisio Cooperative',
-    'health-also-known-as-new-mmg-hospital-providing-quality':
-      'Also known as Baro a MMG Hospital, nagbibigay ti quality dagiti serbisio iti kalusugan iti ti community.',
-    'health-bintawan-road-brgy-quezon': 'Bintawan Road, Brgy. Quezon',
-    'health-salubris-inc-salubris-medical-center': 'SALUBRIS, INC. (Salubris Medical Center)',
-    'health-private-medical-center-offering-various':
-      'Pribado medical center offering various healthcare and diagnostic dagiti serbisio.',
-    'health-aggub-bhs': 'Aggub BHS',
-    'health-bagahabag-bhs': 'Bagahabag BHS',
-    'health-bangaan-bhs': 'Bangaan BHS',
-    'health-bangar-bhs': 'Bangar BHS',
-    'health-buenavista-bhs': 'Buenavista BHS',
-    'health-calaocan-bhs': 'Calaocan BHS',
-    'health-commando-bhs': 'Commando BHS',
-    'health-concepcion-bhs': 'Concepcion BHS',
-    'health-curifang-bhs': 'Curifang BHS',
-    'health-dadap-bhs': 'Dadap BHS',
-    'health-lactawan-bhs': 'Lactawan BHS',
-    'health-nangalisan-bhs': 'Nangalisan BHS',
-    'health-ocapon-bhs': 'Ocapon BHS',
-    'health-osmea-bhs': 'Osmeña BHS',
-    'health-paitan-bhs': 'Paitan BHS',
-    'health-pilar-bhs': 'Pilar BHS',
-    'health-poblacion-bhs': 'Poblacion BHS',
-    'health-quezon-bhs': 'Quezon BHS',
-    'health-quirino-bhs': 'Quirino BHS',
-    'health-roxas-bhs': 'Roxas BHS',
-    'health-tucal-bhs': 'Tucal BHS',
-    'health-uddiawan-bhs': 'Uddiawan BHS',
-    'health-hivcare-cta-eyebrow': 'Opisial a Direktorio manipud iti DOH',
-    'health-hivcare-cta-heading':
-      'Birukem ti Pasilidad para iti Panangagas ken Panangaywan iti HIV',
-    'health-hivcare-cta-desc':
-      'A searchable, mobile-first web directory of all 338 DOH-designated HIV treatment and care facilities in the Philippines, sourced from DOH Circular No. 2026-0065.',
-    'health-hivcare-cta-btn': 'Find HIV Care Facilities',
-    'health-hivcare-cta-stat-facilities': 'Pasilidad iti Intero a Pagilian',
-    'health-hivcare-cta-stat-mobile': 'Mobile-Friendly a Panagbirok',
-    'health-hivcare-cta-stat-verified': 'Naverify ti DOH',
-
-    // Agriculture Page - Ilocano
-    'agri-page-title': 'Serbisio ti Agrikultura',
-    'agri-page-desc': 'Suporta kadagiti mannalon ken progreso ti agrikultura',
-    'agri-page-badge': 'Agrikultura',
-    'agri-seedling': 'Panangibuno ti Mula',
-    'agri-seedling-desc': 'Libre a buto ken mula para kadagiti mannalon',
-    'agri-equipment': 'Gamit iti Talon',
-    'agri-equipment-desc': 'Pagrenta ken tulong iti gamit',
-    'agri-livelihood': 'Dagiti Programa ti Panagbiag',
-    'agri-livelihood-desc': 'Panagsanay ken suporta para kadagiti mannalon',
-    'agri-office-mao': 'Opisina ti Agrikultura ti Munisipalidad',
-    'agri-office-mao-desc':
-      'Panagrehistro iti RSBSA, sertipikasion, programa ti irik/mais, livestock, serbisio ti panagkalap',
-
-    // Ordinance Framework Page - Ilocano
-    'ord-page-title': 'Balangkas ti Ordinansa',
-    'ord-page-desc': 'Dagiti ordinansa a naipasa ti Sangguniang Panlalawigan ng Albay',
-    'ord-page-badge': 'Lehislatura',
-    'ord-what-is': 'Ania ti Ordinansa?',
-    'ord-what-is-p1':
-      'Ti munisipal nga ordinansa ket lokal a linteg a naipasa ti Sangguniang Bayan (Konseho ti Munisipalidad) a mangituray ti munisipalidad ken dagiti residente na. Dagiti ordinansa ket addaan ti pigsa ken epekto ti linteg iti saklaw ti munisipalidad.',
-    'ord-what-is-p2':
-      'Dagiti ordinansa ket mabalin a manakup kadagiti nadumaduma a paksa a mairaman ngem saan a limitado iti: panagbuwis, regulasion ti negosio, kaligtasan pampubliko, proteksion ti aglawlaw, panagtaripato ti trapiko, ken zoning.',
-    'ord-categories-title': 'Dagiti Kategorya ti Ordinansa',
-    'ord-cat-revenue': 'Kita ken Panagbuwis',
-    'ord-cat-business': 'Negosio ken Kalakalan',
-    'ord-cat-safety': 'Kaligtasan Pampubliko',
-    'ord-cat-environment': 'Aglawlaw',
-    'ord-cat-traffic': 'Trapiko ken Transportasion',
-    'ord-cat-zoning': 'Zoning ken Panagusar ti Daga',
-    'ord-2025-title': 'Dagiti Ordinansa ti 2025',
-    'ord-2025-subtitle':
-      'Dagiti opisial nga ordinansa a naipasa ti Sangguniang Panlalawigan ng Albay iti 2025',
-    'ord-table-number': 'Numero ti Ordinansa',
-    'ord-table-title': 'Titulo',
-    'ord-table-date': 'Petsa ti Sesion',
-    'ord-view-all': 'Kitaen Amin nga Ordinansa iti SB Website',
-
-    // Resolution Framework Page - Ilocano
-    'reso-page-title': 'Balangkas ti Resolusion',
-    'reso-page-desc': 'Dagiti resolusion a naipasa ti Sangguniang Panlalawigan ng Albay',
-    'reso-page-badge': 'Lehislatura',
-    'reso-what-is': 'Ania ti Resolusion?',
-    'reso-what-is-p1':
-      'Ti resolusion ket pormal a panangibaga ti opinion wenno pagayatan ti Sangguniang Bayan. Saan a kas kadagiti ordinansa, dagiti resolusion ket awan ti pigsa ken epekto ti linteg ngem agserbida a kas opisial a pahayag ti lehislatura.',
-    'reso-what-is-p2':
-      'Dagiti resolusion ket kadawyan a mausar para iti: panangpadayaw, dawat kadagiti nangatngato nga ahensya ti gobierno, panangibaga ti suporta wenno supiat, ken dagiti administratibo a banag ti Sangguniang Bayan.',
-    'reso-types-title': 'Dagiti Kita ti Resolusion',
-    'reso-type-commendation': 'Panangpadayaw',
-    'reso-type-request': 'Dawat/Apela',
-    'reso-type-support': 'Suporta/Endorsement',
-    'reso-type-condolence': 'Pakipaglungkot',
-    'reso-type-authorization': 'Awtorisasion',
-    'reso-type-appropriation': 'Apropriyasion',
-    'reso-2026-title': 'Dagiti Resolusion ti 2026',
-    'reso-2026-subtitle':
-      'Dagiti opisial a resolusion a naipasa ti Sangguniang Panlalawigan ng Albay iti 2026',
-    'reso-2025-title': 'Dagiti Resolusion ti 2025',
-    'reso-2025-subtitle':
-      'Dagiti opisial a resolusion a naipasa ti Sangguniang Panlalawigan ng Albay iti 2025',
-    'reso-table-number': 'Numero ti Resolusion',
-    'reso-table-title': 'Titulo',
-    'reso-table-date': 'Petsa ti Sesion',
-    'reso-view-all': 'Kitaen Amin a Resolusion iti SB Website',
-
-    // Business Services Page - Ilocano
-    'biz-page-title': 'Serbisio ti Negosio',
-    'biz-page-desc': 'Dagiti permit, lisensya, ken suporta para kadagiti negosio idiay Albay',
-    'biz-page-badge': 'Negosio',
-    'biz-permit-new': 'Permit ti Negosio (Baro)',
-    'biz-permit-new-desc': "Agaplikar ti baro a mayor's permit para iti negosio",
-    'biz-permit-renew': 'Panag-renew ti Permit ti Negosio',
-    'biz-permit-renew-desc': 'I-renew ti tawenantawen a permit ti negosio',
-    'biz-closure': 'Panagrikep ti Negosio',
-    'biz-closure-desc': 'Proseso ti panagrikep ken clearance ti negosio',
-    'biz-cedula': 'Sedula (CTC)',
-    'biz-cedula-desc': 'Community tax certificate para kadagiti indibidual ken negosio',
-    'biz-online-badge': 'Online Services babaen ti Filipizen',
-    'biz-online-title': 'Online a Transaksion ti Negosio',
-    'biz-online-subtitle':
-      'Kompleto dagiti transaksionmo iti negosio online babaen ti opisial a portal ti Filipizen',
-    'biz-billing': 'Online Billing ken Panagbayad ti Negosio',
-    'biz-billing-desc': 'Kitaen ken bayadan dagiti business tax bills online',
-
-    // Tax & Payments Page - Ilocano
-    'tax-page-title': 'Buwis ken Panagbayad',
-    'tax-page-desc':
-      'Buwis ti sanikua, buwis ti negosio, ken dadduma pay a bayadan iti munisipalidad',
-    'tax-page-badge': 'Buwis ken Panagbayad',
-    'tax-property': 'Real Property Tax',
-    'tax-property-desc': 'Tawenantawen a buwis ti daga ken dagiti pagpasayaat',
-    'tax-business': 'Buwis ti Negosio',
-    'tax-business-desc': 'Quarterly ken tawenantawen a panagbayad ti buwis ti negosio',
-    'tax-online-badge': 'Online Services babaen ti Filipizen',
-    'tax-online-title': 'Online a Transaksion ti Buwis',
-    'tax-online-subtitle':
-      'Kompleto dagiti panagbayad ti buwis online babaen ti opisial a portal ti Filipizen',
-
-    // Social Services Page - Ilocano
-    'social-page-title': 'Serbisio Sosyal',
-    'social-page-desc':
-      'Dagiti programa ti suporta para kadagiti vulnerable a sektor ken komunidad',
-    'social-page-badge': 'Serbisio Sosyal',
-    'social-senior': 'Senior Citizen ID',
-    'social-senior-desc': 'ID para kadagiti umili nga 60 a tawen pataas',
-    'social-pwd': 'PWD ID',
-    'social-pwd-desc': 'Pagbibiagian para kadagiti addaan ti kapansanan',
-    'social-assistance': 'Tulong Pinansyal',
-    'social-assistance-desc':
-      'Emergency a tulong pinansyal para iti medikal, libing, ken edukasion',
-
-    // Education Page - Ilocano
-    'edu-page-title': 'Serbisio ti Edukasion',
-    'edu-page-desc': 'Dagiti programa ti iskolarship ken tulong pang-edukasion',
-    'edu-page-badge': 'Edukasion',
-    'edu-scholarship': 'Dagiti Programa ti Iskolarship',
-    'edu-scholarship-desc': 'Dagiti iskolarship ti munisipalidad para kadagiti estudiante',
-    'edu-training': 'Tulong Pang-edukasion',
-    'edu-training-desc': 'Tulong pinansyal para iti edukasion',
-
-    // Infrastructure Page - Ilocano
-    'infra-page-title': 'Serbisio ti Imprastraktura',
-    'infra-page-desc': 'Building permits, konstruksion, ken serbisio ti engineering',
-    'infra-page-badge': 'Imprastraktura',
-    'infra-building': 'Building Permit',
-    'infra-building-desc': 'Permit para iti baro a konstruksion ken renovation',
-    'infra-occupancy': 'Occupancy Permit',
-    'infra-occupancy-desc': 'Certificate of occupancy para kadagiti nalpas a pasdek',
-    'infra-engineering': 'Serbisio ti Engineering',
-    'infra-engineering-desc': 'Teknikal a tulong ken panagrepaso ti plano',
-
-    // Public Safety Page - Ilocano
-    'safety-page-title': 'Serbisio ti Kaligtasan Pampubliko',
-    'safety-page-desc': 'Tugon iti emergency ken panagisagana iti kalamidad',
-    'safety-page-badge': 'Kaligtasan Pampubliko',
-    'safety-disaster': 'Tugon iti Emergency',
-    'safety-disaster-desc': '24/7 a tugon ken serbisio ti rescue iti emergency',
-    'safety-relief': 'Tulong iti Kalamidad',
-    'safety-relief-desc': 'Relief goods ken suporta iti panaglikas',
-    'safety-preparedness': 'Panagisagana iti Kalamidad',
-    'safety-preparedness-desc': 'Panagsanay ken dagiti resources para iti disaster readiness',
-
-    // Environment Page - Ilocano
-    'env-page-title': 'Serbisio ti Aglawlaw',
-    'env-page-desc': 'Panagtaripato ti basura ken proteksion ti aglawlaw',
-    'env-page-badge': 'Aglawlaw',
-    'env-waste': 'Panangurnong ti Basura',
-    'env-waste-desc': 'Dagiti iskedyul ti panangurnong ti basura segun iti barangay',
-    'env-recycling': 'Programa ti Recycling',
-    'env-recycling-desc': 'Segregasion ken dagiti inisyatiba ti recycling',
-
-    // Header Dropdown Items
-    'dropdown-certificates': 'Dagiti Sertipiko',
-    'dropdown-business': 'Negosio',
-    'dropdown-tax-payments': 'Panagbayad ti Buwis',
-    'dropdown-social-services': 'Serbisio Sosyal',
-    'dropdown-health': 'Salun-at',
-    'dropdown-agriculture': 'Agrikultura',
-    'dropdown-infrastructure': 'Imprastraktura',
-    'dropdown-education': 'Edukasion',
-    'dropdown-public-safety': 'Kaligtasan Pampubliko',
-    'dropdown-environment': 'Aglawlaw',
-    'dropdown-ordinance-framework': 'Balangkas ti Ordinansa',
-    'dropdown-resolution-framework': 'Balangkas ti Resolusion',
-
-    // Homepage - Hero
-    'hero-browse-services': 'Kitaen dagiti Serbisio',
-    'hero-contact-us': 'Kontaken',
-    'hero-search-placeholder': 'kas pagarigan, birth certificate, business permit',
-    'hero-popular': 'Popular:',
-    'hero-birth-certificate': 'Birth Certificate',
-    'hero-business-permit': 'Permit ti Negosio',
-    'hero-real-property-tax': 'Buwis ti Kukua',
-
-    // Homepage - Popular Services
-    'popular-services-subtitle':
-      'Napartak a panag-akses kadagiti masansan a makiddaw a serbisio ti munisipalidad',
-    'popular-browse-directory': 'Kitaen ti kompleto a direktorio',
-
-    // Homepage - Stats
-    'stats-at-a-glance': 'Maysa a Panagkita iti Albay',
-    'stats-view-statistics': 'Kitaen ti Estadistika',
-    'stats-population-label': 'Populasion',
-    'stats-population-source': '2024 a Senso',
-    'stats-barangays-label': 'Dagiti Barangay',
-    'stats-barangays-source': 'Dagiti Yunit Administratibo',
-    'stats-municipality-label': 'Munisipalidad',
-    'stats-municipality-source': 'Klasipikasion ti Sapul',
-    'stats-land-area-label': 'Kalawa ti Daga',
-    'stats-land-area-source': 'Dagup a Kalawa ti Munisipalidad',
-
-    // Homepage - Weather & Map
-    'weather-map-title': 'Tiempo ken Mapa ti Albay',
-    'weather-mainly-clear': 'Kaaduan a nalawag',
-    'weather-location': 'Albay, Philippines',
-
-    // Homepage - History
-    'history-title': 'Ababa a Pakasaritaan ti Albay',
-    'history-1760':
-      'Ti orihinal a nagan ti ili ket Bintauan, maysa a pagnaedanan ti Gaddang a ita ket barangay ti Villaverde.',
-    'history-1767':
-      'Ti ili ket pormal a naipasdek babaen ni Padre Alejandro Vidal, maysa a padi a Dominikano a nangidaulo iti misyon nga Espanyol.',
-    'history-1768':
-      'Napanaganan iti Lungabang, manipud iti sao a Gaddang a lungab a kaipapananna ket rukib. Nabaliwan dagiti Espanyol iti Lumabang.',
-    'history-1851':
-      'Indeklara ni Gobernador Heneral Antonio Urbiztondo ti Lumabang a kas baryo ti Bayombong gapu iti kaawan dagiti agnanaed ken sapul.',
-    'history-1853':
-      'Dimteng dagiti umuna nga Ilocano, inyeg ni Don Diego Lumicao, maysa a dati a gobernadorcillo.',
-    'history-1889':
-      'Nabaliwan ti nagan iti Albay tapno padayawan ni Gobernador Heneral Ramon Albay y Llanderal. Ti ili ket naipasayaat manen babaen ni Padre Juan Villaverde nga addaan 14 a magkakahanay a nalawa a kalsada, tunggal maysa ket 20 metro ti kalawa na, a mangbukel iti 100 a kuadrado a bloke.',
-    'history-1957':
-      'Dagiti baryo ti Ibung ken Bintawan ket naisina tapno mangbukel iti ili ti Ibung, a nabaliwan ti nagan iti Villaverde. Ti kalawa ti daga ti Albay ket nabassitan iti 13,980 ektarya.',
-    'history-once-largest-title': 'Idi Kadakkelan',
-    'history-once-largest-desc':
-      'Ti Albay ti kadakkelan a munisipalidad iti probinsia agingga a naisina ti Caliat ken Bintawan tapno agbalin a Quezon ken Villaverde.',
-    'history-urban-planning-title': 'Panagplano ti Ili',
-    'history-urban-planning-desc':
-      'Ti panagpasayaat idi 1889 ket nangaramid iti grid a 100 a kuadrado a bloke, tunggal maysa ket addaan dagup a kalawa a maysa nga ektarya, nga addaan kadagiti kalsada a mapan iti amianan-abagatan ken daya-laud.',
-
-    // Homepage - News
-    'news-announcement': 'Pakaammo',
-    'news-project': 'Proyekto',
-    'news-advisory': 'Abiso',
-    'news-business-permit-title': 'Panag-renew ti Permit ti Negosio 2025',
-    'news-business-permit-desc':
-      'Ti deadline para iti panag-renew ti permit ti negosio ket Enero 20, 2025. Maparegta ti nasapa a panag-renew.',
-    'news-market-title': 'Baro a Wing ti Pampubliko a Tiendaan Nalukat',
-    'news-market-desc':
-      'Ti na-renovate a wing ti Pampubliko a Tiendaan ti Albay ket nalukat kadagiti aglaklako ken publiko.',
-    'news-power-title': 'Naiskedyul a Pannakaputol ti Kuryente',
-    'news-power-desc':
-      'Maintenance a naiskedyul para iti Barangay Osmeña iti Dis 1, 8:00 AM - 5:00 PM.',
-
-    // Homepage - Quiz CTA
-    'quiz-title': 'Albay Quiz',
-    'quiz-subtitle': 'Kasano ti pannakaammom iti Albay, Philippines?',
-    'quiz-description':
-      'Evaluaren ti pannakaammom iti tawid, kultural a pagbigbigan, ken heograpiko a kapatgan ti munisipalidad babaen ti maysa nga interactive a panagsubok ti pannakaammo a naidisinio tapno ipakita ti maysa kadagiti kalatakan a lokalidad ti Bicol Region.',
-    'quiz-take': 'Subokan ti Quiz',
+    // Municipal/Provincial Leadership
+    'section-leadership': 'Mga Lider kan Probinsya',
+    'title-mayor': 'Gobernador kan Probinsya',
+    'title-vice-mayor': 'Bise Gobernador kan Probinsya',
+    'btn-view-officials': 'Hilingon an gabos na Opisyal',
 
     // Footer
     'footer-tagline':
-      'Panangted ti bileg kadagiti umili ti Albay nga addaan ti transparente a panag-akses kadagiti serbisio, programa, ken pampubliko a pondo ti LGU Albay.',
-    'footer-quick-links': 'Dagiti Napartak a Silpo',
-    'footer-resources': 'Dagiti Rekurso',
+      'Nagtatao nin kapangyarihan sa mga taga-Albay na may transparan na akses sa mga serbisyo, programa, asin pampublikong pondo kan LGU Albay.',
+    'footer-quick-links': 'Mga Madaling Link',
+    'footer-resources': 'Mga Rekurso',
     'footer-albay-quiz': 'Albay Quiz',
-    'footer-sitemap': 'Mapa ti Site',
+    'footer-sitemap': 'Mapa kan Site',
     'footer-citizens-charter': "Citizen's Charter",
-    'footer-terms': 'Dagiti Kondision ti Panagusar',
-    'footer-privacy': 'Pagannurotan ti Pagkapribado',
+    'footer-terms': 'Mga Termino nin Paggamit',
+    'footer-privacy': 'Patakaran sa Privacy',
     'footer-accessibility': 'Aksesibilidad',
-    'footer-faq': 'FAQ',
-    'footer-open-data': 'Open Data Philippines',
-    'footer-foi': 'Wayawaya ti Impormasion',
-    'footer-lgu-portal': 'Opisial a Portal ti LGU Albay',
-    'footer-sb': 'Sangguniang Bayan',
-    'footer-lgu-facebook': 'LGU Albay Facebook',
-    'footer-blgf': 'BLGF Portal',
-    'footer-cmci': 'CMCI DTI Portal',
-    'footer-cost': 'Gastos kadagiti Umili ti Albay =',
-    'footer-volunteer': 'Ag-volunteer kadakami',
-    'footer-contribute': 'Ag-ambag ti code kadakami',
+    'footer-cost': 'Gastos sa mga Tawo kan Albay =',
+    'footer-volunteer': 'Magboluntaryo kaming',
+    'footer-contribute': 'Magtabang nin kodigo',
     'footer-copyright-text': 'BetterAlbay.org',
-    'footer-copyright-disclaimer':
-      'Amin a pampubliko nga impormasion ket nagtaud kadagiti opisial a portal ti gobierno.',
-    'footer-skip-to-main': 'Lumaktaw iti kangrunaan a linaon',
   },
 };
 
-type Language = 'en' | 'fil' | 'ilo';
+type Language = 'en' | 'fil' | 'bik';
 
 interface LanguageContextType {
   language: Language;
@@ -1438,7 +984,7 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
   useEffect(() => {
     // Load saved language from localStorage
     const savedLang = localStorage.getItem('betteralbay_lang') as Language;
-    if (savedLang && ['en', 'fil', 'ilo'].includes(savedLang)) {
+    if (savedLang && ['en', 'fil', 'bik'].includes(savedLang)) {
       setLanguageState(savedLang);
     }
   }, []);
@@ -1448,6 +994,7 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
     localStorage.setItem('betteralbay_lang', lang);
   };
 
+  // Falls back to English for any key not yet translated into the active language
   const t = (key: string): string => {
     return translations[language]?.[key] || translations['en']?.[key] || key;
   };
