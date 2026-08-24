@@ -30,7 +30,7 @@ export default function Footer() {
             <p className="footer-tagline">{t('footer-tagline')}</p>
             <div className="footer-social-new">
               <a
-                href="https://www.facebook.com/betteralbay.org"
+                href="https://www.facebook.com/pioalbay2023"
                 className="footer-social-btn"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -121,7 +121,7 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  href="https://www.facebook.com/OfficialLguAlbayFanpage/"
+                  href="https://www.facebook.com/pioalbay2023"
                   target="_blank"
                   rel="noopener noreferrer"
                 >

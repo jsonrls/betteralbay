@@ -183,7 +183,7 @@ Pull requests are reviewed for:
 ## Community
 
 - **Discord:** [Join our community](https://discord.com/invite/qeSu7RJkjQ)
-- **Facebook:** [@betteralbay.org](https://www.facebook.com/betteralbay.org)
+- **Facebook:** [@betteralbay.org](https://www.facebook.com/pioalbay2023)
 - **LinkedIn:** [Connect with us](https://www.linkedin.com/company/betteralbay)
 - **Email:** volunteer@betteralbay.org
 

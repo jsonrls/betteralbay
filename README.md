@@ -455,7 +455,7 @@ See [LICENSE](LICENSE) for full details.
 | -------- | ------------------------------------------------------------------------- |
 | Website  | [betteralbay.org](https://betteralbay.org)                              |
 | Email    | volunteer@betteralbay.org                                                |
-| Facebook | [@betteralbay.org](https://www.facebook.com/betteralbay.org)            |
+| Facebook | [@betteralbay.org](https://www.facebook.com/pioalbay2023)            |
 | LinkedIn | [BetterAlbay](https://www.linkedin.com/company/betteralbay/)            |
 | Discord  | [Join Community](https://discord.com/invite/qeSu7RJkjQ)                   |
 | GitHub   | [BetterAlbay/betteralbay](https://github.com/BetterAlbay/betteralbay) |
